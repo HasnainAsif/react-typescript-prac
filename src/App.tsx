@@ -3,6 +3,7 @@ import { CustomButton } from './components/html/Button';
 import CustomComponent from './components/html/CustomComponent';
 import { CustomInput } from './components/html/Input';
 import Text from './components/polymorphic/Text';
+import Counter from './components/reducer/Counter';
 // import RandomNumber from './components/restriction/RandomNumber';
 // import Toast from './components/templateLiterals/Toast';
 // import Private from './components/auth/Private';
@@ -87,6 +88,8 @@ function App() {
       {/* <User2 /> */}
 
       {/* useReducer hook */}
+      {/* this hook is used when next state depends on previous state */}
+      {/* <Counter /> */}
 
       {/* ContextApi - passing context value to children */}
       {/* contextApi values are fixed(constant) */}
