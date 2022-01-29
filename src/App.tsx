@@ -161,7 +161,7 @@ function App() {
       {/* Polymorphic Components */}
       {/* Used when we are creating a library */}
       {/* We want Text component behaves differently based on as props. It is called Polymorphic Component */}
-      {/* <Text as="h1" size="lg">
+      <Text as="h1" size="lg">
         Heading
       </Text>
       <Text as="p" size="md">
@@ -169,7 +169,7 @@ function App() {
       </Text>
       <Text as="label" htmlFor="someId" size="sm" color="secondary">
         Label
-      </Text> */}
+      </Text>
     </div>
   );
 }
