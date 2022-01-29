@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 
 type GreetProps = {
   name: string;
-  messageCount?: number; // ? shows this prop is optional
+  messageCount?: number; // ? shows this that prop is optional
   isLoggedIn: boolean;
 };
 
@@ -13,8 +13,7 @@ const Greet = (props: GreetProps) => {
       <div>
         {props.isLoggedIn ? (
           <>
-            Assalam-O-Alaikum {props.name}. You have {messageCount} unread
-            messages
+            Assalam-O-Alaikum {props.name}. You have {messageCount} unread messages
           </>
         ) : (
           <>Assalam-O-Alaikum Guest</>

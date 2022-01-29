@@ -5,15 +5,11 @@ type ButtonProps = {
 };
 
 const Button = (props: ButtonProps) => {
-  const handleClick = (
-    event: React.MouseEvent<HTMLButtonElement>,
-    id: number
-  ) => {
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>, id: number) => {
     alert('button clicked!!! ' + id);
   };
-  return (
-    <button onClick={(event) => props.handleClick(event, 1)}>Click</button>
-  );
+
+  return <button onClick={(event) => props.handleClick(event, 1)}>Click</button>;
 };
 
 export default Button;

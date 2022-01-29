@@ -4,30 +4,30 @@ import CustomComponent from './components/html/CustomComponent';
 import { CustomInput } from './components/html/Input';
 import Text from './components/polymorphic/Text';
 import Counter from './components/reducer/Counter';
-// import RandomNumber from './components/restriction/RandomNumber';
-// import Toast from './components/templateLiterals/Toast';
-// import Private from './components/auth/Private';
-// import Profile from './components/auth/Profile';
-// import List from './components/generics/List';
-// import Counter from './components/class/Counter';
-// import Button from './components/Button';
-// import Container from './components/Container';
-// import Box from './components/context/Box';
-// import ThemeContextProvider from './components/context/ThemeContext';
-// import Greet from './components/Greet';
-// import Heading from './components/Heading';
-// import Input from './components/Input';
-// import Oscar from './components/Oscar';
-// import Person from './components/Person';
-// import PersonList from './components/PersonList';
-// import LoggedIn from './components/state/LoggedIn';
-// import User from './components/state/User';
-// import User2 from './components/state/User2';
-// import Status from './components/Status';
-// import User from './components/context/User';
-// import UserContext from './components/context/UserContext';
-// import DomRef from './components/ref/DomRef';
-// import MutableRef from './components/ref/MutableRef';
+import RandomNumber from './components/restriction/RandomNumber';
+import Toast from './components/templateLiterals/Toast';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
+import List from './components/generics/List';
+import CounterClass from './components/class/Counter';
+import Button from './components/Button';
+import Container from './components/Container';
+import Box from './components/context/Box';
+import ThemeContextProvider from './components/context/ThemeContext';
+import Greet from './components/Greet';
+import Heading from './components/Heading';
+import Input from './components/Input';
+import Oscar from './components/Oscar';
+import Person from './components/Person';
+import PersonList from './components/PersonList';
+import LoggedIn from './components/state/LoggedIn';
+import User from './components/state/User';
+import User2 from './components/state/User2';
+import Status from './components/Status';
+import User3 from './components/context/User';
+import UserContext from './components/context/UserContext';
+import DomRef from './components/ref/DomRef';
+import MutableRef from './components/ref/MutableRef';
 
 function App() {
   const personName = {
@@ -60,7 +60,7 @@ function App() {
       {/* Children Props */}
       {/* <Heading>Placeholder text</Heading> */}
 
-      {/* Pass React component as Children props */}
+      {/* Pass React component as Children Props */}
       {/* <Oscar>
         <Heading>Oscar goes to Leonardo Dicpario!!!</Heading>
       </Oscar> */}
@@ -98,7 +98,7 @@ function App() {
       </ThemeContextProvider> */}
       {/* contextApi future values */}
       {/* <UserContext>
-        <User />
+        <User3 />
       </UserContext> */}
 
       {/* useRef for Dom References*/}
@@ -107,7 +107,7 @@ function App() {
       {/* <MutableRef /> */}
 
       {/* Class Components for props and state */}
-      {/* <Counter message="The counter is " /> */}
+      {/* <CounterClass message="The counter is " /> */}
 
       {/* Passing Component as Props */}
       {/* <Private isLoggedIn={false} component={Profile} /> */}
@@ -147,6 +147,7 @@ function App() {
 
       {/* Wrapping HTML Elements */}
       {/* It used for manual templating of project e.g; our own button, input etc... */}
+      {/* Use ...rest instead of importing all props */}
       {/* <CustomButton variant="primary" onClick={() => alert('Button clicked...')}>
         Primary Button
       </CustomButton>

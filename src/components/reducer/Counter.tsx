@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 
 type CounterState = {
   count: number;
@@ -19,9 +19,9 @@ const initialState = { count: 0 };
 const reducer = (state: CounterState, action: CounterAction) => {
   switch (action.type) {
     case 'increment':
-      return { ...state, count: state.count + action.payload };
+      return { count: state.count + action.payload };
     case 'decrement':
-      return { ...state, count: state.count - action.payload };
+      return { count: state.count - action.payload };
     case 'reset':
       return initialState;
     default:

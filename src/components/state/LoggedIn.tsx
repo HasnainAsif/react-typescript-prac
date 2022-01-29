@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const LoggedIn = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // no need to assign type because it is always boolean
 
   const handleLogin = () => {
     setIsLoggedIn(true);

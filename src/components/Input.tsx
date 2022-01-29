@@ -10,7 +10,7 @@ const Input = ({ value, handleChange }: inputProps) => {
     console.log(event);
   };
 
-  return <input type='text' onChange={handleChange} />;
+  return <input type="text" onChange={handleChange} />;
 };
 
 export default Input;

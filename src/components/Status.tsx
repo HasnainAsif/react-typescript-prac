@@ -9,6 +9,7 @@ const Status = (props: StatusProps) => {
       : props.status === 'success'
       ? 'Data fetched successfully!!!'
       : props.status === 'error' && 'Error fetching data!!!';
+
   return (
     <div>
       <h2>Status - {message}</h2>
